@@ -26,21 +26,22 @@ nav{
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     background:#fff;
-    position:static;
+    position:sticky;
     top:0;
     z-index:10;
+    height:70px;
 
 
 }
 
 
 .nav-right img{
- width:25px;
+ width:20px;
  margin-right: 25px;;
 }
 
 .nav-right .user-icon{
-    width:100px;
+    width:60px;
     border-radius: 50%;
     margin-right:0;
 }
@@ -63,6 +64,44 @@ nav{
     width:18px;
 }
 
+.nav-left .menu-icon{
+    width:22p;
+     margin-right:25px;
+}
+
+
+
+.nav-left .logo{
+width:130px;
+}
+/*sidebar-------*/
+
+.sidebar{
+    background:#fff;
+    width:15%;
+    height:100vh;
+    position:fixed;
+    top:0;
+    padding-left:2%;
+    padding-top:80px;
+}
+
+
+.shortcut-links a img{
+    width:20px;
+    margin-right: 20px;
+}
+
+.shortcut-links a{
+display:flex;
+align-items: center;
+margin-bottom: 20px;
+width:fit-content;
+flex-wrap:wrap;}
+
+.shortuct-links a:first-child{
+    color:red;
+}
 
 .sidebar hr{
     border:0;
@@ -85,8 +124,6 @@ nav{
     margin-bottom:20px;
     width:fit-content;
     flex-wrap:wrap;
-
-
 }
 
 
@@ -103,6 +140,13 @@ margin-right:20px;
 .small-sidebar a p{
     display:none;
 
+}
+.small sidebar h3{
+    display: none;
+}
+.smal-sidebar hr{
+    width:50%;
+    margin-bottom:25pxl
 }
 
 
@@ -126,7 +170,10 @@ margin-right:20px;
 
 .list-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(20px));
+    grid-column-gap:16px;
+    grid-row-gap:30px;
+    margin-top: 20px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,lfr));
 }
 
 
@@ -139,4 +186,18 @@ margin-right:20px;
 .vid-info
 {
     color:#5a5a5a;
+    font-size:13px;
+}
+
+.vid-info a{
+    color:#000;
+    font-weight:600;
+    display:block;
+    margin-bottom:5px;
+}
+
+
+.vid-list .thumbnail{
+    width:100%;
+    border-radius:5px;
 }
